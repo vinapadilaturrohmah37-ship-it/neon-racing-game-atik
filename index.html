@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON RACING GAME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HALAMAN LOGIN -->
+    <section id="loginPage" class="page login-page">
+        <div class="login-box">
+            <div class="logo">🏎️</div>
+            <h1>NEON RACING</h1>
+            <p>Welcome to Racing World</p>
+
+            <form id="loginForm">
+                <input type="text" id="username"
+                    placeholder="Masukkan Username" required>
+
+                <input type="password" id="password"
+                    placeholder="Masukkan Password" required>
+
+                <button type="submit" class="btn">
+                    LOGIN MASUK
+                </button>
+            </form>
+
+            <p id="loginMessage"></p>
+            <small>NEON RACING GAME © 2026</small>
+        </div>
+    </section>
+
+    <!-- HALAMAN MENU -->
+    <section id="menuPage" class="page hidden">
+        <div class="menu-box">
+            <h1>🏎️ NEON RACING</h1>
+            <p>Selamat datang, <span id="playerName"></span>!</p>
+
+            <div class="car-icon">🚘</div>
+
+            <button class="btn" id="startButton">
+                ▶ START GAME
+            </button>
+
+            <button class="btn logout" id="logoutButton">
+                LOGOUT
+            </button>
+        </div>
+    </section>
+
+    <!-- HALAMAN GAME -->
+    <section id="gamePage" class="page hidden">
+        <header class="game-header">
+            <h2>🏁 NEON RACING</h2>
+            <div>SKOR: <span id="score">0</span></div>
+        </header>
+
+        <div class="road-container">
+            <canvas id="gameCanvas" width="360" height="550"></canvas>
+        </div>
+
+        <div class="controls">
+            <button id="leftButton">⬅️</button>
+            <button id="rightButton">➡️</button>
+        </div>
+
+        <button class="btn logout" id="exitGame">
+            KELUAR KE MENU
+        </button>
+    </section>
+
+    <!-- GAME OVER -->
+    <section id="gameOverPage" class="page hidden">
+        <div class="menu-box">
+            <h1>GAME OVER!</h1>
+            <div class="car-icon">🏁</div>
+            <h2>Skor: <span id="finalScore">0</span></h2>
+
+            <button class="btn" id="restartButton">
+                🔄 MAIN LAGI
+            </button>
+
+            <button class="btn logout" id="backMenu">
+                KEMBALI KE MENU
+            </button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #09091c;
+    color: white;
+    min-height: 100vh;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* LOGIN */
+
+.login-page {
+    background: linear-gradient(135deg, #09091c, #291052, #101b42);
+}
+
+.login-box, .menu-box {
+    width: 100%;
+    max-width: 390px;
+    padding: 35px 25px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid #8656d9;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(130,60,255,0.25);
+}
+
+.logo {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #b68aff;
+    margin-bottom: 12px;
+}
+
+.login-box p, .menu-box p {
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #7952bb;
+    border-radius: 10px;
+    background: #17142a;
+    color: white;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #7736dc, #2575ee);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.logout {
+    background: #d83b54;
+}
+
+#loginMessage {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #ff7777;
+}
+
+small {
+    display: block;
+    margin-top: 25px;
+    color: #aaa;
+}
+
+/* MENU */
+
+.menu-box {
+    background: linear-gradient(145deg, #20103c, #111d3c);
+}
+
+.car-icon {
+    font-size: 85px;
+    margin: 25px 0;
+}
+
+/* GAME */
+
+#gamePage {
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.game-header {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #b68aff;
+}
+
+.game-header h2 {
+    font-size: 18px;
+}
+
+.road-container {
+    width: 100%;
+    max-width: 360px;
+    overflow: hidden;
+    border: 3px solid #8251d8;
+    border-radius: 12px;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #292929;
+}
+
+.controls {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.controls button {
+    width: 85px;
+    height: 55px;
+    border: none;
+    border-radius: 12px;
+    background: #7438d5;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    .login-box, .menu-box {
+        padding: 25px 18px;
+    }
+}
